@@ -1,0 +1,80 @@
+<!-------html----------->
+<div class="row">
+<div class="toolbar" role="banner">
+  <span></span>
+    <div class="spacer"></div>
+</div>
+<div class="row-col2">
+  <mat-tab-group>
+    <mat-tab label="First"  src="file:///C:/Users/Aa/Downloads/notification-bell-icon-incoming-inbox-260nw-1667755825.webp"> Bell </mat-tab>
+    <mat-icon class="mat-icon-rtl-mirror" svgIcon="thumb-up"></mat-icon>
+    <mat-tab label="Second" src="file:///C:/Users/Aa/Downloads/shopping-icon-vector-cart-on-260nw-1485437213.webp"></mat-tab>
+  </mat-tab-group>  
+</div>
+</div>
+<h2>My Profile</h2>
+<div>
+  <mat-action-list>
+<mat-drawer-container class="example-container">
+  <mat-drawer mode="side" opened>Info</mat-drawer>
+  <a href="file:///C:/Users/Aa/Downloads/user-login-authenticate-icon-human-600w-1365533969.webp">Profile pic</a>
+  <mat-drawer-content>
+    <mat-card>
+      <label name="Name">Name:</label>
+      <span>Mohamed</span>
+      <label name="email">Email:</label>
+      <span>mohamed@h=gmail.com</span>
+      <label name="num">number:</label>
+      <span>+97150936726</span>
+      <label name="Add">Address:</label>
+      <span>UAE</span>
+      <label name="Day">BirthDay:</label>
+      <span>23-09-1784</span>
+    </mat-card>
+</mat-drawer-content>
+</mat-drawer-container>
+</mat-action-list>
+</div>
+<mat-slide-toggle class="left">Slide Button</mat-slide-toggle>
+<mat-icon aria-hidden="false" aria-label="Example home icon" fontIcon="home"></mat-icon>
+<div>
+  <div>
+<table>
+<mat-card-title>My Appoitments</mat-card-title>
+<mat-grid-list cols="3" rowHeight="1:1">
+  <mat-grid-tile><table class="center">
+    <tr>
+      <th *ngFor="let column of headers">
+         {{column}}
+      </th>
+    </tr>
+  
+    <tr *ngFor="let row of rows">
+        <td *ngFor="let column of headers">
+        {{row[column]}}
+      </td>
+    </tr>
+  </table></mat-grid-tile>
+  <mat-grid-tile>
+    <mat-list role="list">
+      <mat-list-item role="listitem">Appoitment Day<h4>Appoitment Date</h4><span>Appoitment time</span></mat-list-item>
+      <mat-list-item role="listitem">Clinic Name<h4>Doctor Name</h4><span>Specilist</span></mat-list-item>
+    </mat-list>
+  </mat-grid-tile>
+</mat-grid-list>
+<div>
+<mat-footer-row>
+<table class="bottom">
+  <mat-grid-tile>My prescription
+    <mat-list role="list">
+      <mat-row>
+      <mat-list-item role="listitem">Doctor Name<h4>Specialization</h4><h4>Date</h4><h5>Time</h5><h6>View</h6></mat-list-item>
+    </mat-row>
+    <mat-row>
+      <mat-list-item role="listitem"><p>Dr. Jameel</p><span>Cardlogoiest</span><mat-text-column>10/10/2020<span>1PM to 2PM</span>Description</mat-text-column></mat-list-item>
+    </mat-row>
+    </mat-list>
+  </mat-grid-tile>
+</table>
+</mat-footer-row>
+</div>
